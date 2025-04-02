@@ -1,0 +1,17 @@
+
+
+spring:
+  application:
+    name: WOW_Raid_Advicer
+  security:
+    oauth2:
+      client:
+        registration:
+          warcraftlogs:
+            client-id: YOUR_CLIENT_ID
+            client-secret: YOUR_CLIENT_SECRET
+            authorization-grant-type: client_credentials
+            scope: public
+        provider:
+          warcraftlogs:
+            token-uri: https://www.warcraftlogs.com/oauth/token
